@@ -184,7 +184,9 @@ h2::after { content: " "; border: solid 2px #3dc9b3; display: block; width: 35px
 .light-box:hover, .light-box:focus { -webkit-box-shadow: 0px 3px 0px 0px #3dc9b3; -moz-box-shadow: 0px 3px 0px 0px #3dc9b3; box-shadow: 0px 3px 0px 0px #3dc9b3; }
 .box-hover { transition: all 500ms ease-in-out; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; }
 .box-hover:hover, .box-hover:focus { transform: translate(0, -15px); -webkit-transform: translate(0, -15px); -ms-transform: translate(0, -15px); }
-.wrapper { height: 650px; }
+.wrapper { height: 100%;
+	position: relative;
+	overflow: hidden;}
 .nopadding { padding: 0; }
 .inner { padding-top: 170px; }
 /* ==========================================================================
@@ -262,7 +264,7 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .overlay-effect .img.hover .overlay { height: 100%; opacity: 1; }
 .img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
-.designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 10px; }
+.designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 5px; }
 /* ==========================================================================
 Subscribe
 ========================================================================== */
