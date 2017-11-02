@@ -215,7 +215,7 @@ Hero
 .hero { background: url('../img/hero-bg.jpg') no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; padding: 65px 0 300px 0; height: auto; }
 .hero h1 { font-size: 100px; letter-spacing: 10px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
-.hero p { letter-spacing: 1px; }
+.hero p { font-size: 15px; letter-spacing: 1px; }
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 /* ==========================================================================
@@ -223,7 +223,7 @@ Intro
 ========================================================================== */
 .intro { background: #f3f5f8; }
 .intro p { margin: 50px 0 0; }
-h1.arrow { font-size: 50px; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
+h1.arrow { font-size: 50px; text-transform: uppercase; color: #353535; letter-spacing: 1px; background: url('../img/h1-bg.png') no-repeat center bottom; padding-bottom: 30px; font-weight: bold; }
 /* ==========================================================================
 Features
 ========================================================================== */
@@ -233,8 +233,8 @@ Features
 /* ==========================================================================
 iPhone Section
 ========================================================================== */
-.fluid-white { width: 50%; background: url('../img/portrait.jpg'); float: right; height: 100%; z-index: 2; }
-.responsive-services { position: relative; }
+.portrait { width: 50%; background: url('../img/portrait.jpg') no-repeat; float: left; height: 100%; z-index: 2; }
+.about-me { position: relative; }
 /* ==========================================================================
 Swag
 ========================================================================== */
@@ -262,7 +262,7 @@ a.expand { display: block; position: absolute; z-index: 100; text-align: center;
 .overlay-effect .img.hover .overlay { height: 100%; opacity: 1; }
 .img img { width: -webkit-calc(100% + 40px) !important; width: calc(100% + 40px) !important; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -moz-transition: opacity 0.35s, -moz-transform 0.35s; -o-transition: opacity 0.35s, -o-transform 0.35s; -webkit-transform: translate3d(-40px, 0, 0); transform: translate3d(-40px, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
 .img:hover img { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); -ms-transform: translate3d(-40px, 0, 0); }
-.designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 50px; }
+.designs { position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; top: 10px; }
 /* ==========================================================================
 Subscribe
 ========================================================================== */
