@@ -1,4 +1,6 @@
 # lausophia.github.io
-– update to more current photo
-– fix margins in "about" section
-– add projects section
+<ol>
+  <li>update to more current photo</li>
+  <li>fix margins in "about" section</li>
+  <li>add projects section</li>
+</ol>
