@@ -217,7 +217,15 @@ Hero
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { font-size: 30px; letter-spacing: 1px; }
 .downarrow {position: absolute; z-index: 2; left: 25%; bottom: -45vh; transition-duration: 1s}
-.downarrow:hover, .downarrow:focus { color: #3dc9b3; border: solid 3px #3dc9b3; }
+.downarrow:hover {
+	-webkit-filter: invert(80%); /* Safari 6.0 - 9.0 */
+    filter: invert(80%);
+}
+
+.arrow:active {
+	-webkit-filter: invert(30%); /* Safari 6.0 - 9.0 */
+    filter: invert(30%);
+}
 .learn-more-btn { background: rgba(61, 201, 179, 1); padding: 20px 40px; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; color: #fff; text-transform: uppercase; letter-spacing: 1px; display: inline-block; -webkit-box-shadow: 0px 3px 0px 0px #309383; -moz-box-shadow: 0px 3px 0px 0px #309383; box-shadow: 0px 3px 0px 0px #309383; margin: 60px 0 0; font-weight: bold; }
 .learn-more-btn:hover, .learn-more-btn:focus { background: rgba(61, 201, 179, 0.6); color: #fff; }
 /* ==========================================================================
