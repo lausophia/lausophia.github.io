@@ -216,7 +216,7 @@ Hero
 .hero h1 { font-size: 100px; letter-spacing: 10px; margin: 10px; }
 .hero h1 span { color: #a1a9b0; display: inline-block; }
 .hero p { font-size: 30px; letter-spacing: 1px; }
-.downarrow {position: absolute; z-index: 3; left: 40%; bottom: 10%; transition-duration: 1s}
+.downarrow {position: absolute; z-index: 3; left: 25%; bottom: 5%; transition-duration: 1s}
 .downarrow:hover {
 	-webkit-filter: invert(70%); /* Safari 6.0 - 9.0 */
     filter: invert(70%);
