@@ -38,6 +38,14 @@ a:active {
 }
 
 /* header */
+#header{
+    position: static;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    margin-bottom:10%;
+}
 
 .nav{
     font-family: 'Lato', sans-serif;
@@ -45,12 +53,11 @@ a:active {
 }
 
 #nav-wrapper{
-    margin-top: 25%;
+    margin-top: 23%;
 }
 
 .nav-item{
     margin-right: 20px;
-
     padding-bottom: 5px;
 }
 
@@ -68,21 +75,36 @@ a:active {
     margin-top: 12%;
 }
 
-/* body */
-
 .intro-wrapper{
-    margin-top: 4%;
+    position: static;
     margin-right: 25%;
-
+    margin-bottom:5%;
 }
-
 .intro{
     font-family: 'Playfair Display', serif;
     font-size: 40px;
     letter-spacing: 0.5px;
 }
 
+/* coming soon */
+#construction-wrapper{
+
+    text-align: center;
+}
+
+.coming-msg{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+}
+
+.check-me-msg{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+
 /* about me */
+
 li > a:link {
     color: #ffc64c;
 }
@@ -93,7 +115,6 @@ li > a:hover {
 
 .about-me{
     display: inline-block;
-    margin-top: 6%;
 }
 
 #im-also{
@@ -114,7 +135,7 @@ li > a:hover {
 
 /* footer */
 .content{
-    margin-bottom:100px
+    margin-bottom:100px;
 }
 
 #footer{
