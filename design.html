@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet">
+    <link href="img/favi.png" rel="icon" type="image/x-icon"/>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <script src='js/modernizr.js'></script>
+    <script src='js/dynamicpage.js'></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+    $(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    });
+    </script>
     <title>Design | Sophia Lau</title>
 </head>
 <body>
-This is my design
+<div id="header"></div>
+<div class="content">
+design
+</div>
+<div id="footer"></div>
 </body>
 </html>
