@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Montserrat" rel="stylesheet">
+    <link href="img/favi.png" rel="icon" type="image/x-icon"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />-->
+    <!--<script src="bower_components/aos/dist/aos.js"></script>-->
+    <!--<script>-->
+    <!--AOS.init();-->
+    <!--</script>-->
+    <script type="text/javascript" src='js/modernizr.js'></script>
+<script type="text/javascript" src='js/dynamicpage.js'></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script>
+    $(function(){
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+    });
+</script>
+    <title>Codedoor | Sophia Lau</title>
+</head>
+<body>
+<div id="header"></div>
+<div class="content fade-in">
+    <div class="left intro-wrapper">
+        <div class="intro">
+            Codedoor
+        </div>
+        <p>
+        <div class="project-description">
+            Codedoor is a web application inspired by Glassdoor and created specifically for the members of Berkeley Codebase
+            to share and learn from each other's job experiences and advice. My team used modern web development languages,
+            including Django, JavaScript, and React to build this application.
+        </div>
+    </div>
+
+    <div class="project-pics">
+        <img src="img/codedoor/homepage.png" width="45%">
+        <img src="img/codedoor/search.png" alt="profile" width="53%">
+    </div>
+
+
+    <div class="project-details-wrapper">
+        <div class="project-details-title">
+            Full Stack Web Development
+        </div>
+        <div class="project-details-description">
+            <p>
+                Maintained a database of User, Company, and Review models.
+            </p>
+            <p>
+                Imported and utilized external database of existing companies.
+            </p>
+            <p>
+                Fully functioning search implemented, by review, interview, company, and user.
+            </p>
+            <p>
+                AJAX-ified search and pagination for seamless navigation between search pages.
+            </p>
+        </div>
+    </div>
+
+    <div class="project-pics">
+        <img src="img/codedoor/slack.png" width="48%">
+        <img src="img/codedoor/profile.png" alt="profile" width="48%">
+    </div>
+
+    <div class="project-details-wrapper module">
+        <div class="project-details-title">
+            Slack User Authentication
+        </div>
+        <div class="project-details-description">
+            <p>
+               Utilized Django’s built-in User’s model in conjunction with our own Profiles model
+            </p>
+            <p>
+                Set sign-in and sign-out redirect URLs within the Slack API to align with application functionality.
+            </p>
+            <p>
+                Application generates unique tokens with every new session the user begins.
+            </p>
+            <p>
+                Utilized Amazon’s S3 Web Service to maintain a cloud of profile images uploaded by user.
+            </p>
+            <p>
+                Required login for interaction throughout all parts of website
+            </p>
+        </div>
+    </div>
+
+    <div class="project-pics">
+        <img src="img/codedoor/create-review.png" width="34%">
+        <img src="img/codedoor/create-question.png" width="32%">
+        <img src="img/codedoor/create-app-2.png" width="34%">
+    </div>
+
+    <div class="project-details-wrapper module">
+        <div class="project-details-title">
+            Share and Learn From Experience
+        </div>
+        <div class="project-details-description">
+            <p>
+                User may submit and view previous interview questions, application experience, and process difficulty for specific companies,
+            </p>
+            <p>
+               Company name auto-completion using company information from an external database.
+            </p>
+            <p>
+               Reviews are validated via JavaScript before submission and are only editable by the original reviewer.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+<div id="footer"></div>
+</body>
+</html>

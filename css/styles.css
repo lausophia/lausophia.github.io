@@ -3,6 +3,7 @@ html{
   min-height: 100%;
 }
 
+
 /* link hover animation */
 a:link {
     text-decoration: none;
@@ -63,7 +64,11 @@ a:active {
 
 .left{
     float: left;
-    margin-left: 10%
+    margin-left: 10%;
+}
+
+.left-no-float{
+    margin-left: 10%;
 }
 
 .right{
@@ -75,8 +80,10 @@ a:active {
     margin-top: 12%;
 }
 
-.intro-wrapper{
-    position: static;
+
+#intro{
+    display:block
+    position: relative;
     margin-right: 25%;
     margin-bottom:5%;
 }
@@ -86,9 +93,95 @@ a:active {
     letter-spacing: 0.5px;
 }
 
+/* project homepage */
+
+.codedoor-container{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    line-height: 0.5;
+    padding-bottom: 10%;
+
+}
+
+.preview{
+    opacity:1;
+    transition: 0.5s ease;
+    height: auto;
+    width: 100%;
+}
+
+.text-wrapper{
+    opacity: 0;
+    transition: 0.5s ease;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin-top: -16%;
+    width: 35%;
+    height: auto;
+}
+
+.codedoor-container:hover .text-wrapper{
+    opacity: 0.9;
+}
+
+.codedoor-container:hover .preview{
+    opacity:0.7;
+}
+
+.preview-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.preview-caption{
+    font-size: 18px;
+}
+
+
+
+/* project details */
+
+.project-description{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #535354;
+    line-height: 2;
+}
+
+.project-pics{
+    display: inline-flex;
+    align-items: center;
+}
+
+.right-pic{
+    margin-right: 10%;
+}
+
+.project-details-wrapper{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 33%;
+    padding-right: 33%;
+    text-align: center;
+}
+
+.project-details-title{
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.project-details-description{
+    font-size: 20px;
+}
+
+
 /* coming soon */
 #construction-wrapper{
-
+    margin-top: 8%;
     text-align: center;
 }
 
@@ -135,7 +228,7 @@ li > a:hover {
 
 /* footer */
 .content{
-    margin-bottom:100px;
+    margin-bottom:13%;
 }
 
 #footer{

@@ -12,6 +12,7 @@
     <script>
     $(function(){
     $("#header").load("header.html");
+    $("#intro").load("intro.html");
     $("#footer").load("footer.html");
     $("#coming-soon").load("coming-soon.html");
     });
@@ -20,8 +21,20 @@
 </head>
 <body>
 <div id="header"></div>
-<div class="content fade-in" id="coming-soon">
+<div id="intro" class="left-no-float"></div>
+<div class="content fade-in">
+    <div class="codedoor-container">
+        <a href="\codedoor">
+        <img src="img/codedoor/codedoor-logo.png" class="preview" width="100%">
+        <div class="text-wrapper">
+            <p class="preview-title">Codedoor</p>
+            <p class="preview-caption">Full-Stack Web Development</p>
+        </div>
+    </div>
+    </a>
+    <div id="coming-soon"></div>
 </div>
+
 <div id="footer"></div>
 </body>
 </html>
