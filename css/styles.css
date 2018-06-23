@@ -141,12 +141,16 @@ a:active {
 }
 
 /* project details */
+.project-intro{
+    margin-bottom: 3%;
+}
 
 .project-description{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     color: #535354;
     line-height: 2;
+    margin-right: 28%;
 }
 
 .project-pics{
