@@ -145,6 +145,12 @@ a:active {
     margin-bottom: 3%;
 }
 
+.project-type{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color:#535354;
+}
+
 .project-description{
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
