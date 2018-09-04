@@ -176,6 +176,14 @@ a:active {
     padding-right: 33%;
     text-align: center;
 }
+.project-details-wrapper-wide{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: left;
+}
 
 .project-details-title{
     font-size: 35px;
@@ -184,6 +192,14 @@ a:active {
 
 .project-details-description{
     font-size: 20px;
+}
+
+.site-title-wrapper{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3%;
+
 }
 
 /* design instagram */
