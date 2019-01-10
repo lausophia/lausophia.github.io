@@ -21,6 +21,10 @@ a:link {
     position: relative;
 }
 
+a.nav-item:visited {
+    color: #bababa;
+}
+
 a:visited {
     color: #ffc64c;
 }
