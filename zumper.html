@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display|Montserrat" rel="stylesheet">
+    <link href="img/favi.png" rel="icon" type="image/x-icon"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <!--<link rel="stylesheet" href="bower_components/aos/dist/aos.css" />-->
+    <!--<script src="bower_components/aos/dist/aos.js"></script>-->
+    <!--<script>-->
+    <!--AOS.init();-->
+    <!--</script>-->
+    <script type="text/javascript" src='js/modernizr.js'></script>
+    <script type="text/javascript" src='js/dynamicpage.js'></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function(){
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+        });
+    </script>
+    <title>Zumper | Sophia Lau</title>
+</head>
+<body>
+<div id="header"></div>
+<div class="content fade-in">
+    <img src="img/zumper/zumper-banner.png" class="center-img" width="100%">
+    <div class="project-container centered">
+        <div class="centered-with-text">
+            <div class="title">
+                Zumper
+            </div>
+            <div class="subtitle">
+                Full Stack Web Development
+            </div>
+        </div>
+
+        <!--1. Background-->
+        <div class="project-section">
+            <div class="subheading">
+               01 | background
+            </div>
+            <div class="description">
+                <a href="https://www.zumper.com">Zumper</a> is a rental marketplace company based in San Francisco that Berkeley
+                <a href="http://www.codebase.berkeley.edu/">Codebase</a> reached out to work on a project for during the Fall 2018 semester.
+                Our team developed a spam classification web application for Zumper employees to both feed messages on their platform through
+                our machine learning models, as well as classify messages that do not reach a threshold of certainty from the models. This project's
+                development was mentored by my team's project managers, Hans Zheng and Amitav Baruah. I worked most closely with Olivia Shah, Emma Chiu,
+                and Trevor Aquino to create the web application portion of this project.
+                <br>
+                <em>Technologies: React, Express</em>
+            </div>
+        </div>
+
+        <!--2. Message Classification-->
+        <div class="project-section">
+            <div class="subheading">
+               02 | message classification
+            </div>
+            <div class="description">
+                Each message that is shown to the user displays a content and sender field. The user presses either the <em>spam</em> or <em>not spam</em> buttons
+                in order to classify what category they perceive the message to belong to. Which each press of these buttons, each message object updates the counts for the
+                number of votes it received in each category.
+                <br><br>
+                However, in order to ensure that no single user has complete autonomy over each message's classification, there are two primary requirements that must be met
+                before a message is considered classified (both of which are adjustable in a .env file based on the wants and needs of the Zumper team):
+                <br>
+                1) <b>Minimum number of classifers</b>: This is the number of people that must have classified a message before even considering which category it belongs to.
+                <br>
+                2) <b>Bias Threshold</b>: This is the percentage of bias towards one category that must be met, set as a fraction between 0 and 1. For example, if the
+                bias threshold is set to be 75%, then this is the fraction of votes for a single category that must be met before a message is officially classified.
+                <br>
+                <em>** If a message fulfills requirement 1, but not 2, then the classification is determined by a dynamic threshold, which is explained below.</em>
+                <br><br>
+                Once a message is officially classified, it will no longer be seen by users that are currently classifying incoming messages; instead, they are displayed in a
+                table view that is accessible via the tabs on the side bar.
+            </div>
+        </div>
+
+        <!--3. Dynamic Thresholds-->
+        <div class="project-section">
+            <div class="subheading">
+               03 | dynamic thresholds
+            </div>
+            <div class="description">
+                For the case where a message's spam and not-spam tallies do not surpass high enough bias threshold, the threshold becomes <em>dynamic</em>,
+                in which case, the minimum number of classifiers becomes a higher value, and the two requirements reset with this new "highMinClassifiers"
+                value.
+                <br><br>
+                If the bias threshold is not reached by the time the maximum number of classifiers is met, the message is then classified as unknown, and
+                the only way for it to be officially classified as spam or not spam is via superuser review.
+            </div>
+        </div>
+
+        <img src="img/zumper/dynamicthresholds.png" class="center-img project-pic-padding" width="70%">
+
+        <!--4. User Authentication-->
+        <div class="project-section">
+            <div class="subheading">
+               04 | user authentication
+            </div>
+            <div class="description">
+                We implemented Google authentication that either updates the current database or creates a new entry in the table. The login is secured
+                with passport.js, and every future backend request from the time of the login is validated to ensure that only Zumper employees are allowed
+                to make changes while using the application.
+                <br><br>
+                Although we set up authentication in this manner, we made it easy for the Zumper team to change the authentication to allow access to only
+                Zumper emails when we handed over the final product.
+            </div>
+        </div>
+
+        <div class="project-pics">
+            <img src="img/zumper/signin.png" class="center-img" width="40%">
+            <img src="img/zumper/signinsuperuser.png" class="center-img" width="40%">
+        </div>
+
+        <!--5. Superusers & User Scoring-->
+        <div class="project-section">
+            <div class="subheading">
+               05 | user scoring & superusers
+            </div>
+            <div class="description">
+                <strong>User Scoring</strong><br>
+                For every user that uses this application, the quality of their activity on the platform is determined by an objectively determined user score
+                that is simply calculated by taking the number of correct classifications that they make divided by the total number of messages they classified.
+                <br>
+                These user scores are continuously updated with every new message that is officially classified (i.e. when the both the bias threshold and minimum
+                number of classifiers are met), and is immediately viewable by superusers as a column in the table listing all of the active users.
+
+                <br><br>
+                <strong>Superusers</strong><br>
+                The Zumper spam classification app permits the assignment of <em>superusers</em>, which have a higher level of accessibility.
+                Superusers are allowed to override the classification of any message that is displayed in the list of already categorized messages,
+                as well as ascertain unknown classifications. With every change in classification, the user scoring is also adjusted accordingly, and both
+                the changes in the categorization and the scoring is immediately visually updated in their respective tables.
+                <br>
+                Superusers are also able to both grant and revoke access to any regular user in the same user table.
+            </div>
+        </div>
+    </div>
+    <img src="img/zumper/superuser.png" class="center-img" width="100%">
+</div>
+
+
+
+<div id="footer"></div>
+</body>
+</html>
