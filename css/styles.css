@@ -249,6 +249,40 @@ a:active {
     margin-right: auto;
 }
 
+.banner{
+    width: 100%;
+    padding-bottom: 45%;
+}
+
+#box{
+    background: url(../img/boxmockup.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+
+}
+
+#zumper{
+    background: url(../img/zumpermockup.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+#codedoor{
+    padding-bottom: 35%;
+    background: url(../img/codedoor/codedoor-banner.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#codebase{
+    background: url(../img/codebasemockup.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center top;
+}
 
 .project-container{
     width: 80%;
