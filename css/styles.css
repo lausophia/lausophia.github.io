@@ -146,7 +146,7 @@ a:active {
     margin-bottom:5%;
 }
 .intro{
-    font-size: 40px;
+    font-size: 2.8vw;
     letter-spacing: 0.5px;
     color:#212121;
 }
@@ -156,7 +156,6 @@ a:active {
 .project-grid{
     display: flex;
     width: 95%;
-    max-width: 1200px;
     flex-wrap: wrap;
 }
 
