@@ -412,6 +412,29 @@ a:active {
   margin-top: 3%;
 }
 
+.img-grid-col-2{
+    width: 47%;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-grid-col-2 img{
+  margin-top: 3%;
+}
+
+.img-grid-col-3{
+    width: 97%;
+    flex-wrap: wrap;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-grid-col-3 img{
+  margin-top: 3%;
+}
 
 /* coming soon */
 #construction-wrapper{
